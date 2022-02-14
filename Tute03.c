@@ -12,7 +12,21 @@ n -> 1-
 sum = 1+2+3+...+10 = 55 */
 
 #include <stdio.h>
-int main() {
+int main() 
+{
+  int n, sum=0;
+  int i =1;
+
+  printf("Enter any postive interger :");
+  scanf("%d", &n);
+
+  while (i<=n)
+  {
+    sum += i;
+    ++i;
+  }
+  
+  printf("sum : %d", sum);
   
   return 0;
 }
